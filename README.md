@@ -6,7 +6,6 @@ The first thing to do is to clone the repository:
 
 ```sh
 $ git clone https://github.com/OliyadKebede/Portfolio-.git
-$ cd demo_questionanswering_project
 ```
 
 Once `setup` has finished :
