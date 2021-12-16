@@ -1,0 +1,25 @@
+body {
+display : flex ;
+flex-direction : row ;
+
+justify-content : center ;
+align-items : center ;
+height : 800 px;
+}
+
+.container{
+width : 800px;
+font-style : normal ;
+font-weight : bold;
+background-color : #292d31;
+border-width : 2px ;
+border-style : solid ;
+border-color : black;
+border-radius : 10px;
+}
+
+.logo img{
+width : 50px ;
+height : 50px;
+}
+

@@ -1,0 +1,30 @@
+{% extends 'parent.html' %}
+{% load static %}
+{% block content %}
+  <link href="{% static 'total_result.css' %}" rel="stylesheet">
+
+<div class="content">
+ <div class="successfully_added">
+     <h3 style="color:#ff9933 "> YOUR FINAL SCORE  </h3>
+ </div>
+    <div class="score">
+        <h1 style="text-align : center; color:white;">{{ score.score }} / {{topic.query_question_length}}</h1>
+    </div>
+    <div class="time_finished">
+        <h3> TIME FINISHED: {{ score.minute }} : {{ score.second }}  </h3>
+    </div>
+    <div class="remark">
+        <h4 style="text-align:center; color:white;">" {{remark}} "</h4>
+    </div>
+    <div class="row_button">
+  <div class="add_new_question" >
+<button><a href="{% url 'QA:question_page' topic.id  %}  "> Retake</a></button>
+
+  </div>
+    <div class="goto_home">
+         <button><a href="{% url 'Topic:check_index'  %}  ">Home </a></button>
+    </div>
+</div>
+</div>
+
+{% endblock content %}

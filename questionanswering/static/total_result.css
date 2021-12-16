@@ -1,0 +1,71 @@
+
+.content{
+width : 500px;
+margin-left : 100px;
+}
+.row_button  {
+text-align : right ;
+margin-right : 100px;
+margin-top : 50px;
+padding-bottom : 30px;
+
+}
+.score{
+text-align : center;
+}
+a{
+color:white ;
+font-weight : bold;
+font-size: 15px;
+}
+a:link {
+text-decoration:none;
+}
+a:visited {
+color :white;
+}
+a:hover{
+color:white;
+}
+a:active{
+color: white;
+}
+
+.row_button button{
+background-color : #333333;
+border : none ;
+color : white ;
+text-align : center;
+font-size: 15px;
+display : inline-block;
+border-radius :5px;
+border : 4px solid #ff9933 ;
+transition-duration : 0.4s;
+
+}
+.add_new_question{
+float : left;
+width: 200px;
+}
+.goto_home{
+width: 200px
+float : right;
+}
+.row_button  button:hover{
+background-color : #ff9933 ;
+color : #333333;
+}
+.successfully_added{
+background-color:#29313a;
+text-align :center;
+}
+.successfully_added h2{
+color:#ff9933 ;
+}
+.successfully_added p{
+color:white ;
+}
+.time_finished h3{
+color : white;
+text-align : center;
+}

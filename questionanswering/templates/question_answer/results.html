@@ -1,0 +1,23 @@
+{% extends 'parent.html' %}
+{% load static %}
+{% block content %}
+    <title>Title</title>
+  <link href="{% static 'result.css' %}" rel="stylesheet">
+
+<div class="content">
+ <div class="successfully_added">
+     <h3> YOU HAVE SUCCESSFULLY ADD THE QUESTION  </h3>
+     <p> {{ question.question_text }} </p>
+ </div>
+    <div class="row_button">
+  <div class="add_new_question" >
+<button><a href="{% url 'QA:new_question' topic.id  %}  "> Add Again ?</a></button>
+
+  </div>
+    <div class="goto_home">
+         <button><a href="{% url 'Topic:check_index'  %}  ">Goto Home </a></button>
+    </div>
+</div>
+</div>
+
+{% endblock content %}

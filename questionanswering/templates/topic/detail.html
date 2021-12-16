@@ -1,0 +1,37 @@
+{% extends 'parent.html' %}
+{% load static %}
+{% block content %}
+
+<link href="{% static 'detail.css' %}" rel="stylesheet" xmlns="http://www.w3.org/1999/html">
+    <div class="add_question">
+        <h3><a href="{% url 'QA:new_question' topic.id %}">Add Question</a> </h3>
+    </div>
+    <div class="title">
+<h3>  {{ topic.title }} </h3>
+  </div>
+<div class="content">
+  <p> Welcome to {{ topic.title }} topic </p>
+
+    <div class="detail">
+        <div class="time_description">
+            <p>Given time to finished</p>
+        </div>
+
+   <div class="time_display">
+       <img src="{% static 'assets/clock.png' %}" width="50%" height="50%">
+   <p > {{topic.given_time_in_minute}} minute </p>
+   </div>
+         <div class="edit_time">
+          <button>  <a href="{% url 'Topic:add_topic_time' topic.id %}">Edit Time</a> </button>
+        </div>
+ <div class="question_length">
+     <p> Question Length   :  {{topic.query_question_length}}</p>
+ </div>
+        </div>
+  <div class="start_button" >
+<button><a href="{% url 'QA:question_page' topic.id %}  "> Start </a></button>
+  </div>
+
+</div>
+
+{% endblock content %}

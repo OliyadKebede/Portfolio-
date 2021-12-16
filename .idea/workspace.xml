@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1bc44a8c-29a3-4ae1-9608-6e663cfa44c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/demo_questionanswering_project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/questionanswer/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/questionanswer/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/questionanswer/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/questionanswer/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/questionanswer/migrations/0002_score.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/questionanswer/migrations/0003_auto_20211209_1300.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/questionanswer/migrations/0004_auto_20211210_1410.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/questionanswer/migrations/0005_score_date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/questionanswer/migrations/0006_alter_score_date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/questionanswer/migrations/0007_alter_score_date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/questionanswer/migrations/0008_alter_choice_is_answer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/questionanswer/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/questionanswer/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/questionanswer/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/questionanswer/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/static/assets/add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/static/assets/clock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/static/assets/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/static/assets/sorry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/static/detail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/static/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/static/newQuestion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/static/new_topic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/static/parent.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/static/result.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/static/sorry.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/static/topic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/static/total_result.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/templates/parent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/templates/question_answer/newQuestion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/templates/question_answer/question_pages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/templates/question_answer/results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/templates/question_answer/sorry.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/templates/topic/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/templates/topic/new_topic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/templates/topic/topicindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/templates/topic/total_result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/templates/topic/update_topic_time.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/topic/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/topic/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/topic/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/topic/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/topic/migrations/0002_alter_topic_pub_date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/topic/migrations/0003_alter_topic_given_time_in_minute.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/topic/migrations/0004_alter_topic_given_time_in_minute.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/topic/migrations/0005_delete_comment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/topic/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/topic/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/topic/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/topic/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/utility/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/utility/constant.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questionanswering/utility/utilities.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="20yE4qlrvejOVqmlY05fsn4R5kN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Doc/image" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\django_project\questionanswering_project\demo_questionanswering_project\Doc\image" />
+      <recent name="C:\Users\HP\django_project\questionanswering_project\demo_questionanswering_project\questionanswering\static\assets" />
+      <recent name="C:\Users\HP\django_project\questionanswering_project\demo_questionanswering_project\questionanswering\static" />
+      <recent name="C:\Users\HP\django_project\questionanswering_project\demo_questionanswering_project\questionanswering\templates" />
+      <recent name="C:\Users\HP\django_project\questionanswering_project\demo_questionanswering_project\questionanswering\media" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\django_project\questionanswering_project\demo_questionanswering_project\questionanswering\templates\question_answer" />
+      <recent name="C:\Users\HP\django_project\questionanswering_project\demo_questionanswering_project\questionanswering\templates\topic" />
+      <recent name="C:\Users\HP\django_project\questionanswering_project\demo_questionanswering_project\questionanswering\static" />
+      <recent name="C:\Users\HP\django_project\questionanswering_project\demo_questionanswering_project\questionanswering\templates" />
+      <recent name="C:\Users\HP\django_project\questionanswering_project\demo_questionanswering_project\questionanswering" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1bc44a8c-29a3-4ae1-9608-6e663cfa44c7" name="Default Changelist" comment="" />
+      <created>1637008239613</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637008239613</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

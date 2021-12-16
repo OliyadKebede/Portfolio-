@@ -1,0 +1,64 @@
+.content{
+
+width : 300px;
+margin-left : 100px;
+}
+.add_topic{
+float : right;
+margin-right : 100px;
+padding: 2px 2px;
+
+}
+.add_topic a{
+color :#ff9933;
+}
+a{
+color:white ;
+font-weight : bold;
+font-size: 15px;
+}
+a:link {
+text-decoration:none;
+}
+a:visited {
+color :white;
+}
+a:hover{
+color:white;
+}
+a:active{
+color: white;
+}
+.title {
+font-family : Times;
+font-size : large ;
+background-color :#29313a;
+color : #ff9933 ;
+text-align : center ;
+letter-spacing : 2 em;
+}
+.topic_list{
+margin-top : 20px ;
+margin-bottom : 30px;
+}
+
+.topic_list ol li  {
+width : 300px;
+
+background-color : #333333;
+border : none ;
+color : white ;
+padding : 10px 24px;
+margin : 1px 0px 1px 0px;
+text-align : left;
+font-size: 10px;
+display : inline-block;
+border : 1px solid #ff9933 ;
+border-radius :1px;
+transition-duration : 0.4s;
+}
+.topic_list ol li:hover{
+background-color : #ff9933 ;
+color : #333333;
+}
+

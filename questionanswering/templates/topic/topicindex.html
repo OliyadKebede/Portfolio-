@@ -1,0 +1,25 @@
+{% extends 'parent.html' %}
+{% load static %}
+{% block content %}
+<link href="{% static 'topic.css' %}" rel="stylesheet">
+    <div class="add_topic">
+        <h3><a href="{% url 'Topic:add_topic' %}"><h3>Add Topic</h3></a></h3>
+    </div>
+    <div class="title">
+<h3>  Topics </h3>
+  </div>
+<div class="content">
+  <div class="topic_list" >
+{% if topic_lists %}
+<ol>
+{% for topic in topic_lists %}
+<li><a href=" {% url 'Topic:topic_welcome' topic.id %}">{{ topic.title }}</a></li>
+{% endfor %}
+</ol>
+{% else %}
+<p>No topics are available.</p>
+{% endif %}
+  </div>
+
+</div>
+{% endblock content %}

@@ -1,0 +1,28 @@
+{% extends 'parent.html' %}
+{% load static %}
+{% block content %}
+    <title>add Topic</title>
+     <link href="{% static 'new_topic.css' %}" rel="stylesheet">
+
+    <div class="add_Topic">
+<h3>  New Topic </h3>
+  </div>
+<div class="content">
+    <form action="#" method="post">
+{% csrf_token %}
+{{ form.as_p }}
+        <div class="next_button">
+<input type="submit" value="Save">
+            </div>
+</form>
+
+</div>
+
+
+{% endblock content %}
+
+</body>
+</html>
+
+</body>
+</html>

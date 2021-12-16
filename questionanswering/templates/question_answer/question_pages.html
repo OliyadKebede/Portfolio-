@@ -1,0 +1,105 @@
+{% extends 'parent.html' %}
+{% load static %}
+{% block content %}
+    <link href="{% static 'home.css' %}" rel="stylesheet">
+
+<script>
+    function checklist(id){
+    var ele=document.getElementsByName("choice")
+    for(i=0;i<ele.length ;i++){
+    if( ele[i].checked) {
+    var r = document.getElementById(id).href;
+    console.log(r);
+    var c= ele[i].value ;
+    console.log( c);
+    r = r+c; ;
+     console.log(r);
+    document.getElementById(id).href=r; }  }
+    }
+</script>
+
+<div class="left_container">
+
+
+    <div class="question_number">
+<p> Question {{ page_obj.number }} - {{ page_obj.paginator.num_pages }} </p>
+
+   </div>
+     {% for question in page_obj.object_list %}
+    <div class="question_container">
+
+
+<p>  <h3> {{ question.question_text }} </h3></p>
+   </div>
+</div>
+<div class="right_container">
+
+   <div class="time_display">
+       <img src="{% static 'assets/clock.png' %}" width="50%" height="50%">
+       <input type="hidden" value="{{ score.minute }}" id="time">
+        <input type="hidden" value="{{ score.second }}" id="timesecond">
+   <h3 id="demo" > </h3>
+   </div>
+    <div class="choice_display">
+
+     {% if error_message %}
+      <p style="color:red" ><strong> {{ error_message }}</strong></p>
+        {% endif %}
+{% for choice in question.choice_set.all %}
+
+<input type="radio"  name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" >
+        <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+
+{% endfor %}
+{% endfor %}
+
+{% if page_obj.has_next %}
+
+<div class="next_button">
+    <button onclick="checklist('abc');"> <a href="?page={{ page_obj.next_page_number }}&choice=" id="abc"  > Next</a></button>
+    {% else %}
+
+   </div>
+        <div class="finished_button">
+
+  <button onclick="checklist('abcd');"><a href="?page={{ 1 }}&choice=" id="abcd">Finished</a></button>
+   </div>
+
+{% endif %}
+   </div>
+
+</div>
+    <script>
+
+// Set the date we're counting down to
+
+function countdown(min ,sec ){
+// Update the count down every 1 second
+var minutes = min;
+var seconds = sec;
+var x = setInterval(function() {
+
+seconds -=1;
+if(seconds == 0 ){
+minutes-=1;
+seconds = 59;
+}
+// Display the result in the element with id="demo"
+document.getElementById("demo").innerHTML =  minutes + "m " + seconds + "s ";
+// If the count down is finished, write some text
+if (minutes <0) {
+clearInterval(x);
+document.getElementById("demo").innerHTML = "EXPIRED";
+}
+}, 1000);
+}
+
+var b = document.getElementById("time");
+var s = document.getElementById("timesecond");
+b = b.value
+s= s.value
+console.log(b)
+
+countdown(b,s);
+</script>
+{% endblock content %}

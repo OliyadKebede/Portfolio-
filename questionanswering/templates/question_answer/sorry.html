@@ -1,0 +1,45 @@
+{% extends 'parent.html' %}
+{% load static %}
+{% block content %}
+<link href="{% static 'sorry.css' %}" rel="stylesheet">
+
+<div class="content">
+    {% if score.is_time_up %}
+    <div class="sorry_text">
+        <h3>  Sorry , your Time is Up !</h3>
+    </div>
+    <div class="row_time">
+
+    <div class="add_new_question" >
+<button><a href="{% url 'QA:question_page' topic.id  %}  "> Retake</a></button>
+
+  </div>
+
+    <div class="home_time">
+          <button><a  href="{% url 'Topic:check_index' %}">Home</a></button>
+    </div>
+    </div>
+    {% else %}
+    <div class="sorry_text">
+<h3>  Sorry their is No Question! </h3>
+  </div>
+
+    <div class="sorry_image">
+        <img src="{% static 'assets/sorry.png' %}" width="50" height="50" >
+    </div>
+
+    <div class="row">
+    <div class="add_question">
+       <button> <a  href="{% url 'QA:new_question' topic.id %}">Add Question</a></button>
+         </div>
+
+
+    <div class="home">
+          <button><a  href="{% url 'Topic:check_index' %}">Home</a></button>
+    </div>
+    </div>
+           {% endif %}
+
+</div>
+
+{% endblock content %}
